@@ -12,7 +12,7 @@ export default {
    *              如果不使用，则需要在路由中给需要在菜单中展示的路由设置meta: {title: 'xxx'}
    *              用来在菜单中显示文字
    */
-  useI18n: true,
+  useI18n: false,
   /**
    * @description api请求基础路径
    */
@@ -24,6 +24,7 @@ export default {
    * @description 默认打开的首页的路由name值，默认为home
    */
   homeName: 'home',
+  devtool: 'source-map',
   /**
    * @description 需要加载的插件
    */
@@ -34,3 +35,38 @@ export default {
     }
   }
 }
+
+// var path = require('path');
+
+// module.exports = {
+//   //...
+//   devServer: {
+//     contentBase: path.join(__dirname, 'dist'),
+//     compress: true,
+//     port: 9000
+//   }
+// };
+// var path = require('path');
+// module.exports = {
+//   build: {
+//     index: path.resolve(__dirname, 'dist/index.html'),
+//     assetsRoot: path.resolve(__dirname, 'dist'),
+//     assetsSubDirectory: 'static',
+//     assetsPublicPath: '/',
+//     productionSourceMap: true
+//   },
+//   dev: {
+//     port: 8080,
+//     proxyTable: {}
+//   }
+// }
+
+// module.exports = {
+//   dev: {
+//     assetsPublicPath: '/',
+//     assetsSubDirectory: 'static',
+//     proxyTable: {},
+//     port: 8081,
+//     host: "localhost"
+//   }
+// }
